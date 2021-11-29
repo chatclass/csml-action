@@ -19,7 +19,7 @@ Action to upload CSML code into the server engine.
 ## Example usage
 
 ```yaml
-uses: chatclass/csml-action@v1.1
+uses: chatclass/csml-action@v1.1.1
 with:
   api-key: 'xxxxxxxxx'
   api-secret: 'xxxxxxxxx'
