@@ -1,0 +1,20 @@
+name: 'CSML Action'
+description: 'Action to validate and deploy CSML code'
+inputs:
+  api-key:
+    description: 'api key from server'
+    required: true
+  api-secret:
+    description: 'api secret from server'
+    required: true
+  endpoint:
+    description: 'endpoint where engine is hosted'
+    required: true
+    default: 'https://clients.csml.dev/v1/api'
+  csml-folder-path:
+    description: 'csml folder path'
+    required: true
+    default: '.'
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
