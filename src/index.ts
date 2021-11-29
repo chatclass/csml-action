@@ -5,9 +5,9 @@ import Upload from './commands/Upload';
 
 (async () => {
   try {
-    new Validate().run();
-		new Upload().run()
-    new Build().run();
+    await new Validate().run();
+		await new Upload().run()
+    await new Build().run();
   } catch (error: any) {
     core.setFailed(error.message);
   }

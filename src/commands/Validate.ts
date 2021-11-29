@@ -17,6 +17,6 @@ export default class Validate extends Command {
       console.error(message);
       errorsMessage.push(message);
     });
-    throw { message: JSON.stringify(errorsMessage) };
+    throw { message: errorsMessage.join(' ') };
   }
 }
